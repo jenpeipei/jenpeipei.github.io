@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sh-Pic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style-track.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Josefin+Slab&family=Noto+Sans+HK&family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a href="index.html"><h1>Sh-Pic</h1></a>
+
+  <div class="button-container">
+    <a href="index-track.html" class="button">追蹤</a>
+    <a href="index-collect.html" class="button">收藏</a>
+    <a href="index-upload.html" class="button">上傳</a>
+    <a href="index-personal.html" class="button">個人</a>
+  </div>
+
+  <div class="rectangle"></div>
+
+
+  <div class="wrap">
+    <img src="me.jpg" alt="">
+  </div>
+
+
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* 允许换行 */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      margin-top: 120px;
+    }
+  
+    .avatar-wrapper {
+      width: 20%; /* 每个 avatar 和 text-row 占据的宽度 */
+      margin-bottom: 50px; /* 垂直间距为 50px */
+      box-sizing: border-box; /* 盒模型为 content-box 加上 padding 和 border */
+      padding-right: 20px; /* 水平间距为 20px */
+    }
+  
+    .avatar {
+      /* 设置第二张照片的样式 */
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      left: 32%;
+    }
+  
+    .avatar img {
+      max-width: 100%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .text-row {
+      color: #B7744D;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 10px; /* 调整垂直间距的数值 */
+      margin-left: 42%;
+      z-index: 999;
+    }
+  
+    /* 新增样式 */
+    .row-spacing {
+      margin-top: 0%; /* 行与行之间的间距为 10% */
+    }
+  </style>
+  
+  <div class="container">
+    <!-- 第一排重复 5 次 -->
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 第二排重复 5 次 -->
+  <div class="container row-spacing">
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 第三排重复 5 次 -->
+  <div class="container row-spacing">
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 第四排重复 5 次 -->
+  <div class="container row-spacing">
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  
+    <div class="avatar-wrapper">
+      <div class="avatar">
+        <img src="me.jpg" alt="">
+      </div>
+      <div class="text-row">
+        <p>HSUAN</p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+  <div class="background-fill">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
