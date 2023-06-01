@@ -13,7 +13,7 @@
 
 </head>
 <body>
-  <a href="index.html"><h1>Sh-Pic</h1></a>
+  <a href="index.html"><h1 class="logo">Sh-Pic</h1></a>
 
   <div class="button-container">
     <a href="index-track.html" class="button">追蹤</a>
@@ -56,17 +56,17 @@
     <!-- Example Code -->
     
     <div style="display: flex; justify-content: center; margin-top: 50px; font-family: 'Saira Condensed', sans-serif;">
-      <button type="button" class="btn btn-outline-All" style="margin-right: 20px;">所有</button>
-      <button type="button" class="btn btn-outline-Red" style="margin-right: 20px;">红色</button>
-      <button type="button" class="btn btn-outline-Orange" style="margin-right: 20px;">橘色</button>
-      <button type="button" class="btn btn-outline-Yellow" style="margin-right: 20px;">黃色</button>
-      <button type="button" class="btn btn-outline-Green" style="margin-right: 20px;">綠色</button>
-      <button type="button" class="btn btn-outline-Blue" style="margin-right: 20px;">藍色</button>
-      <button type="button" class="btn btn-outline-Purple" style="margin-right: 20px;">紫色</button>
-      <button type="button" class="btn btn-outline-Pink" style="margin-right: 20px;">粉色</button>
-      <button type="button" class="btn btn-outline-White" style="margin-right: 20px;">白色</button>
-      <button type="button" class="btn btn-outline-Black" style="margin-right: 20px;">黑色</button>
-      <button type="button" class="btn btn-outline-Brown">棕色</button>
+      <button type="button" class="btn btn-outline-All" style="margin-right: 20px;" onclick="changeContainer0('all')">所有</button>
+      <button type="button" class="btn btn-outline-Red" style="margin-right: 20px;" onclick="changeContainer('red')">红色</button>
+      <button type="button" class="btn btn-outline-Orange" style="margin-right: 20px;" onclick="changeContainer2('orange')">橘色</button>
+      <button type="button" class="btn btn-outline-Yellow" style="margin-right: 20px;" onclick="changeContainer3('yellow')">黃色</button>
+      <button type="button" class="btn btn-outline-Green" style="margin-right: 20px;" onclick="changeContainer4('green')">綠色</button>
+      <button type="button" class="btn btn-outline-Blue" style="margin-right: 20px;" onclick="changeContainer5('blue')">藍色</button>
+      <button type="button" class="btn btn-outline-Purple" style="margin-right: 20px;" onclick="changeContainer6('purple')">紫色</button>
+      <button type="button" class="btn btn-outline-Pink" style="margin-right: 20px;" onclick="changeContainer7('pink')">粉色</button>
+      <button type="button" class="btn btn-outline-White" style="margin-right: 20px;" onclick="changeContainer8('white')">白色</button>
+      <button type="button" class="btn btn-outline-Black" style="margin-right: 20px;" onclick="changeContainer9('black')">黑色</button>
+      <button type="button" class="btn btn-outline-Brown" onclick="changeContainer10('brown')">棕色</button>
     </div>  
     
     <!-- End Example Code -->
@@ -160,29 +160,17 @@
     </div>
   </div>
   
+
+
   <div id="overlay" onclick="hideOverlay()">
     <img id="overlayImage" src="" alt="放大图像">
   </div>
-  
-  <script>
-    function showOverlay(imageSrc) {
-      var overlay = document.getElementById('overlay');
-      var overlayImage = document.getElementById('overlayImage');
-      overlayImage.src = imageSrc;
-      overlay.style.display = 'flex';
-    }
-  
-    function hideOverlay() {
-      var overlay = document.getElementById('overlay');
-      overlay.style.display = 'none';
-    }
-
-</script>
-
+ 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+    <script src="common.js"></script>
 
 </body>
 

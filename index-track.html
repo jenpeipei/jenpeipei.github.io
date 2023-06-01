@@ -29,60 +29,6 @@
   <div class="wrap">
     <img src="me.jpg" alt="">
   </div>
-
-
-  <style>
-    .container {
-      display: flex;
-      flex-wrap: wrap; /* 允许换行 */
-      justify-content: center; /* 水平居中 */
-      align-items: center; /* 垂直居中 */
-      margin-top: 120px;
-    }
-  
-    .avatar-wrapper {
-      width: 20%; /* 每个 avatar 和 text-row 占据的宽度 */
-      margin-bottom: 50px; /* 垂直间距为 50px */
-      box-sizing: border-box; /* 盒模型为 content-box 加上 padding 和 border */
-      padding-right: 20px; /* 水平间距为 20px */
-    }
-  
-    .avatar {
-      /* 设置第二张照片的样式 */
-      width: 100px;
-      height: 100px;
-      overflow: hidden;
-      border-radius: 50%;
-      position: relative;
-      left: 32%;
-    }
-  
-    .avatar img {
-      max-width: 100%;
-      height: auto;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-  
-    .text-row {
-      color: #B7744D;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      font-size: 20px;
-      font-weight: 600;
-      margin-top: 10px; /* 调整垂直间距的数值 */
-      margin-left: 42%;
-      z-index: 999;
-    }
-  
-    /* 新增样式 */
-    .row-spacing {
-      margin-top: 0%; /* 行与行之间的间距为 10% */
-    }
-  </style>
   
   <div class="container">
     <!-- 第一排重复 5 次 -->

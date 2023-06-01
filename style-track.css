@@ -58,6 +58,12 @@ body {
     left:0px;
     z-index: 50;
   }
+  /* 響應式尺寸：Extra small */
+@media (max-width: 575.98px) {
+  .rectangle {
+    position: fixed;
+  }
+}
   
   
   .background-fill {
@@ -104,5 +110,80 @@ body {
     padding: 10px 20px;
     margin-right: 10px;
   }
+  /* 響應式尺寸 */
+@media (max-width: 575.98px) { /* Extra small devices */
+  .button {
+    font-size: 14px; /* 调整字体大小 */
+    padding: 5px 10px; /* 调整按钮内边距 */
+    margin-right: 5px; /* 调整按钮间距 */
+  }
+}
   
+
+
+
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* 允许换行 */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      margin-top: 120px;
+    }
+  
+    .avatar-wrapper {
+      width: 20%; /* 每个 avatar 和 text-row 占据的宽度 */
+      margin-bottom: 50px; /* 垂直间距为 50px */
+      box-sizing: border-box; /* 盒模型为 content-box 加上 padding 和 border */
+      padding-right: 20px; /* 水平间距为 20px */
+    }
+  
+    .avatar {
+      /* 设置第二张照片的样式 */
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      left: 32%;
+    }
+  
+    .avatar img {
+      max-width: 100%;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .text-row {
+      color: #B7744D;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 10px; /* 调整垂直间距的数值 */
+      margin-left: 42%;
+      z-index: 999;
+    }
+  
+    /* 新增样式 */
+    .row-spacing {
+      margin-top: 0%; /* 行与行之间的间距为 10% */
+    }
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .avatar-wrapper {
+        width: 30%; /* Adjust the width proportionally */
+      }
+    
+      .avatar {
+        width: 75px; /* Adjust the avatar size proportionally */
+        height: 75px;
+        left: 33%; /* Adjust the position proportionally */
+      }
+    }
+    
+   
   

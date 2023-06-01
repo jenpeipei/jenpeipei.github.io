@@ -91,6 +91,12 @@ body {
     left:0px;
     z-index: 50;
   }
+  /* 響應式尺寸：Extra small */
+@media (max-width: 575.98px) {
+  .rectangle {
+    position: fixed;
+  }
+}
   
   
   .background-fill {
@@ -137,31 +143,63 @@ body {
     padding: 10px 20px;
     margin-right: 10px;
   }
+  /* 響應式尺寸 */
+@media (max-width: 575.98px) { /* Extra small devices */
+  .button {
+    font-size: 14px; /* 调整字体大小 */
+    padding: 5px 10px; /* 调整按钮内边距 */
+    margin-right: 5px; /* 调整按钮间距 */
+  }
+}
   
   /* 照片 */
   .container {
     display: grid;
   }
   
-  .photo, .photo2, .photo3, .photo4 {
+  .photo,
+  .photo2,
+  .photo3,
+  .photo4 {
     width: 250px;
     height: 250px;
     overflow: hidden;
-    z-index: -1;
+    position: relative; /* Add this line */
   }
   
   .photo {
-    margin-top: 5%;
+    margin-top: 100px;
   }
   
-  .photo2, .photo3, .photo4 {
+  .photo2,
+  .photo3,
+  .photo4 {
     margin-top: 4vh;
   }
   
-  .container .photo img{
+  .container .photo img {
     max-width: 100%;
     height: auto;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+  
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001; /* Add this line */
+  }
+  
+  #overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
   }

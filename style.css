@@ -1,4 +1,4 @@
-h1 {
+.logo {
   color: #B7744D;
   font-size: 30px;
   background-color: #EDE7E2;
@@ -16,6 +16,7 @@ h1 {
   left: 0;
   z-index: 999;
 }
+
 
 
 body {
@@ -55,21 +56,28 @@ body {
   left:0px;
   z-index: 50;
 }
+/* 響應式尺寸：Extra small */
+@media (max-width: 575.98px) {
+  .rectangle {
+    position: fixed;
+  }
+}
+
 
 
 
 /* 更改輸入框和按鈕的寬度 */
 .input-group .form-control {
   width: 90%;
-  max-width: 500px; /* 設定最大寬度 */
+  max-width: 500px;
   height: 45px;
   border-width: 2px;
-  border-radius: 20px; /* 設定邊框造型為圓角 */
+  border-radius: 20px;
 }
 .input-group .btn {
   width: 10%;
-  max-width: 300px; /* 設定最大寬度 */
-  border-radius: 20px; /* 設定邊框造型為圓角 */
+  max-width: 300px;
+  border-radius: 20px;
 }
 
 /* 更改輸入框和按鈕的顏色 */
@@ -100,6 +108,23 @@ body {
   height: 100vh;
   z-index: 1;
 }
+/* 響應式尺寸：Extra small */
+@media (max-width: 575.98px) {
+  .input-group .form-control {
+    width: 5%; /* 根据需要进行调整 */
+    max-width: 150px; /* 根据需要进行调整 */
+    height: 30px;
+
+  }
+  .input-group .btn {
+    width: 15%; /* 根据需要进行调整 */
+    max-width: 150px; /* 根据需要进行调整 */
+    height: 30px;
+  }
+}
+
+
+
 
 
 
@@ -192,6 +217,7 @@ body {
 
 
 
+
 .background-fill {
   position: fixed;
   top: 60px;/* 開始填充的位置 */
@@ -237,6 +263,16 @@ body {
   margin-right: 10px;
 }
 
+/* 響應式尺寸 */
+@media (max-width: 575.98px) { /* Extra small devices */
+  .button {
+    font-size: 14px; /* 调整字体大小 */
+    padding: 5px 10px; /* 调整按钮内边距 */
+    margin-right: 5px; /* 调整按钮间距 */
+  }
+}
+
+
 
 .container {
   display: grid;
@@ -253,7 +289,7 @@ body {
 }
 
 .photo {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .photo2,
@@ -288,6 +324,11 @@ body {
   max-height: 90%;
   object-fit: contain;
 }
+
+
+
+
+
 
 
 
@@ -409,5 +450,12 @@ body {
 .btn-outline-Brown:hover {
   background-color: #634B46;
   color: #fff;
+}
+@media (max-width: 575.98px) {
+  .btn {
+    font-size: 10px;
+    padding: 5px 5px;
+    margin-top: 0px;
+  }
 }
 
